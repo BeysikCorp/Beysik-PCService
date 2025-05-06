@@ -1,0 +1,6 @@
+@Beysik_PCService_HostAddress = http://localhost:5153
+
+GET {{Beysik_PCService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
