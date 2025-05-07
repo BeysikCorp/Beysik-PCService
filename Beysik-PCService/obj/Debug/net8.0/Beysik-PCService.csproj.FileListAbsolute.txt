@@ -35,3 +35,9 @@ C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\obj\Debu
 C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\obj\Debug\net8.0\Beysik-PCService.pdb
 C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\obj\Debug\net8.0\Beysik-PCService.genruntimeconfig.cache
 C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\obj\Debug\net8.0\ref\Beysik-PCService.dll
+C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\bin\Debug\net8.0\DnsClient.dll
+C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\bin\Debug\net8.0\Snappier.dll
+C:\Users\Administrator\Documents\Code\Beysik-PCService\Beysik-PCService\bin\Debug\net8.0\ZstdSharp.dll
