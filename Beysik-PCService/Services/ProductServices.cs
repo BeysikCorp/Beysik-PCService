@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace PCSBeysik_PCService.Services
+namespace Beysik_PCService.Services
 {
     public class ProductService
     {

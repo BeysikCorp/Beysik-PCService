@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Beysik_PCService.Models;
-using PCSBeysik_PCService.Services;
+using Beysik_PCService.Services;
 
 namespace Beysik_PCService.Controllers;
 
