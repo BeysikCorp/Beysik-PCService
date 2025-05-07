@@ -1,4 +1,7 @@
 
+using Beysik_PCService.Models;
+using Beysik_PCService.Services;
+
 namespace Beysik_PCService
 {
     public class Program
@@ -8,6 +11,10 @@ namespace Beysik_PCService
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.Configure<ProductDatabaseSettings>(
+            builder.Configuration.GetSection("ProductDatabase"));
+
+            builder.Services.AddSingleton<ProductService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
