@@ -1,4 +1,5 @@
-﻿using Beysik_PCService.Models;
+﻿using RabbitMQ.Client;
+using Beysik_PCService.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
@@ -36,5 +37,15 @@ namespace Beysik_PCService.Services
         public async Task RemoveAsync(string id) =>
             await _productsCollection.DeleteOneAsync(x => x.Id == id);
 
+        public async Task<bool> ReduceStockAsync(string productId, int quantity)
+        {
+            var product = await GetAsync(productId);
+            if (product == null || product.Stock < quantity)
+                return false;
+
+            product.Stock -= quantity;
+            await UpdateAsync(product.Id, product);
+            return true;
+        }
     }
 }

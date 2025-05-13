@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using RabbitMQ.Client;
+using Microsoft.AspNetCore.Mvc;
 using Beysik_PCService.Models;
 using Beysik_PCService.Services;
 
@@ -54,7 +55,7 @@ public class ProductCatalogController : ControllerBase
 
         return NoContent();
     }
-
+    //not active delete
     [HttpDelete("/products/{id:length(24)}")]
     public async Task<IActionResult> Delete(string id)
     {
