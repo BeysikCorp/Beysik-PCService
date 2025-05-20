@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\J-AnnSerna\\Source\\Repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj": {}
+    "C:\\Users\\J-AnnSerna\\source\\repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\J-AnnSerna\\Source\\Repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj": {
+    "C:\\Users\\J-AnnSerna\\source\\repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\J-AnnSerna\\Source\\Repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj",
+        "projectUniqueName": "C:\\Users\\J-AnnSerna\\source\\repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj",
         "projectName": "Beysik-PCService",
-        "projectPath": "C:\\Users\\J-AnnSerna\\Source\\Repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj",
+        "projectPath": "C:\\Users\\J-AnnSerna\\source\\repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj",
         "packagesPath": "C:\\Users\\J-AnnSerna\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\J-AnnSerna\\Source\\Repos\\Forks\\Beysik-PCService\\Beysik-PCService\\obj\\",
         "projectStyle": "PackageReference",

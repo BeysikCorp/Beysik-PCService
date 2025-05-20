@@ -1,4 +1,3 @@
-using RabbitMQ.Client;
 using Beysik_PCService.Models;
 using Beysik_PCService.Services;
 

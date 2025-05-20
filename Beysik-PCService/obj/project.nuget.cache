@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MFnlFM6BAtg=",
+  "dgSpecHash": "sHyt2okzPiQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\J-AnnSerna\\Source\\Repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj",
+  "projectFilePath": "C:\\Users\\J-AnnSerna\\source\\repos\\Forks\\Beysik-PCService\\Beysik-PCService\\Beysik-PCService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\J-AnnSerna\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\J-AnnSerna\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
