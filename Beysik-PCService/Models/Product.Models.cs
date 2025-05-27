@@ -18,6 +18,9 @@ namespace Beysik_PCService.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
+        [BsonElement("IsActive")]
+        public bool IsActive { get; set; } = true;
+
         [BsonElement("Name")]
         public string Name { get; set; } = null!;
 

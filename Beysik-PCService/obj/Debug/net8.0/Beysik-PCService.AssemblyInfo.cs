@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Beysik-PCService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b34ad0a5ce5c1dee25065f5affd24ef456a70cc7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f02c8a3412907470e8f1f1f21638ff0a6e55ac9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Beysik-PCService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Beysik-PCService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
