@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿//using RabbitMQ.Client;
+using Microsoft.AspNetCore.Mvc;
 using Beysik_PCService.Models;
 using Beysik_PCService.Services;
+using System.Text.Json;
 
 namespace Beysik_PCService.Controllers;
 
@@ -9,9 +11,9 @@ namespace Beysik_PCService.Controllers;
 public class ProductCatalogController : ControllerBase
 {
     private readonly ProductService _productService;
+
     public ProductCatalogController(ProductService productService) =>
         _productService = productService;
-
 
     [HttpGet("/products")]
     public async Task<List<Product>> Get() =>
@@ -45,24 +47,45 @@ public class ProductCatalogController : ControllerBase
     }
 
     [HttpPost("/products")]
-    public async Task<IActionResult> Post(Product newProduct)
+    public async Task<IActionResult> Post([FromBody] Product newProduct)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
         await _productService.CreateAsync(newProduct);
 
         return CreatedAtAction(nameof(Get), new { id = newProduct.Id }, newProduct);
     }
 
+    //This will be publish to rabbitMQ  if the item is created
+    //    PublishProductCreated(newProduct);
+
+    //        return CreatedAtAction(nameof(Get), new { id = newProduct.Id
+    //}, newProduct);
+    //    }
+
+    //    private void PublishProductCreated(Product product)
+    //{
+    //    using var channel = _rabbitConnection.CreateModel();
+    //    channel.QueueDeclare(queue: "product_created", durable: false, exclusive: false, autoDelete: false, arguments: null);
+
+    //    var body = JsonSerializer.SerializeToUtf8Bytes(product);
+    //    channel.BasicPublish(exchange: "", routingKey: "product_created", basicProperties: null, body: body);
+    //}
+
     [HttpPut("/products/{id:length(24)}")]
     public async Task<IActionResult> Update([FromRoute] string id, Product updatedProduct)
     {
-        var book = await _productService.GetAsync(id);
+        var product = await _productService.GetAsync(id);
 
-        if (book is null)
+        if (product is null)
         {
             return NotFound();
         }
 
-        updatedProduct.Id = book.Id;
+        updatedProduct.Id = product.Id;
 
         await _productService.UpdateAsync(id, updatedProduct);
 
@@ -72,9 +95,9 @@ public class ProductCatalogController : ControllerBase
     [HttpDelete("/products/{id:length(24)}")]
     public async Task<IActionResult> Delete([FromRoute] string id)
     {
-        var book = await _productService.GetAsync(id);
+        var product = await _productService.GetAsync(id);
 
-        if (book is null)
+        if (product is null)
         {
             return NotFound();
         }
@@ -83,4 +106,5 @@ public class ProductCatalogController : ControllerBase
 
         return NoContent();
     }
+
 }
