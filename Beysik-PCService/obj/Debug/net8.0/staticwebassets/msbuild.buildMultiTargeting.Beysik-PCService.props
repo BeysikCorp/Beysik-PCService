@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Beysik-PCService.props" />
-</Project>
