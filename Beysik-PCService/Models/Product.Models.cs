@@ -46,6 +46,6 @@ namespace Beysik_PCService.Models
         public string ImageUrl { get; set; } = null!;
 
         [BsonElement("Tags")]
-        public List<string> Tags { get; set; } = new List<string>();
+        public List<string>? Tags { get; set; } = new List<string>();
     }
 }

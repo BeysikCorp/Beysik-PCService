@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beysik-PCService", "Beysik-PCService.csproj", "{73E45CB2-1D98-4756-A4F9-AD9B2FD2ADED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beysik-Common", "..\..\Beysik-Common\Beysik-Common.csproj", "{D1DAF0F8-4A00-A48B-F072-2E267A96A6AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{73E45CB2-1D98-4756-A4F9-AD9B2FD2ADED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73E45CB2-1D98-4756-A4F9-AD9B2FD2ADED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73E45CB2-1D98-4756-A4F9-AD9B2FD2ADED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1DAF0F8-4A00-A48B-F072-2E267A96A6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DAF0F8-4A00-A48B-F072-2E267A96A6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DAF0F8-4A00-A48B-F072-2E267A96A6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DAF0F8-4A00-A48B-F072-2E267A96A6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
